@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"errors"
 	"fmt"
 	"log"
 	"os"
@@ -27,4 +28,18 @@ func main() {
 	} else {
 		log.Fatal(err)
 	}
+
+	err2 := returnError()
+
+	if err2 != nil {
+		log.Fatal(err2)
+	}
+}
+
+func returnError() error {
+
+	err := errors.New("U failed man!!!")
+
+	return err
+
 }

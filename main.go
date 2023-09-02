@@ -11,36 +11,11 @@ import (
 	"strconv"
 )
 
-/*
- */
-func rootOfEqunation() {
-	scanner := bufio.NewScanner(os.Stdin)
-
-	fmt.Print("a : ")
-
-	scanner.Scan()
-	a, _ := strconv.ParseFloat(scanner.Text(), 64)
-
-	fmt.Print("b : ")
-
-	scanner.Scan()
-	b, _ := strconv.ParseFloat(scanner.Text(), 64)
-
-	fmt.Print("c : ")
-
-	scanner.Scan()
-	c, _ := strconv.ParseFloat(scanner.Text(), 64)
-
-	delta := math.Pow(b, 2) - 4*a*c
-
-	fmt.Println("Delta -->", delta)
-
-	root1 := (-b - math.Pow(delta, 0.5)) / 2 * a
-	root2 := (-b + math.Pow(delta, 0.5)) / 2 * a
-
-	fmt.Println(root1, root2)
-
-}
+const (
+	NAME     string = "BARİS"
+	AGE      int    = 25
+	FAV_LANG string = "C#"
+)
 
 func main() {
 
@@ -103,6 +78,34 @@ func callHttp() {
 		os.Exit(1)
 	}
 	fmt.Printf("client: response body: %s\n", resBody)
+}
+
+func rootOfEqunation() {
+	scanner := bufio.NewScanner(os.Stdin)
+
+	fmt.Print("a : ")
+
+	scanner.Scan()
+	a, _ := strconv.ParseFloat(scanner.Text(), 64)
+
+	fmt.Print("b : ")
+
+	scanner.Scan()
+	b, _ := strconv.ParseFloat(scanner.Text(), 64)
+
+	fmt.Print("c : ")
+
+	scanner.Scan()
+	c, _ := strconv.ParseFloat(scanner.Text(), 64)
+
+	delta := math.Pow(b, 2) - 4*a*c
+
+	fmt.Println("Delta -->", delta)
+
+	root1 := (-b - math.Pow(delta, 0.5)) / 2 * a
+	root2 := (-b + math.Pow(delta, 0.5)) / 2 * a
+
+	fmt.Println(root1, root2)
 }
 
 type Person struct {
