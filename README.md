@@ -1,9 +1,5 @@
 # Go Learning
 
-Bu repo, Go programlama dilini öğrenmek için kaynakları içerir.
-
-## Dersler
-
 - [Array](https://github.com/BarisGulyuz/Go-Learning/blob/main/array/main.go)
 - [Concurency](https://github.com/BarisGulyuz/Go-Learning/blob/main/concurency/main.go)
 - [Functions](https://github.com/BarisGulyuz/Go-Learning/blob/main/functions/main.go)
