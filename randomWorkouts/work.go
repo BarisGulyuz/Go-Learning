@@ -73,9 +73,6 @@ func clearEmptyStrings(input []string) []string {
 	return result
 }
 
-// re := regexp.MustCompile(value)
-// isMatch = re.MatchString(requestPathParams[i])
-
 func main() {
 
 	requestPath := "/categories"
